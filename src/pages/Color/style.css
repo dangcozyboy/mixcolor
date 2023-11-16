@@ -1,0 +1,122 @@
+.sample {
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  color: white;
+  animation: pop-in 2s ease-in;
+}
+.sampleresult {
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pop-in 2s ease-in;
+}
+@media screen and (min-width: 768px) {
+  .layout {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 450px;
+    height: 500px;
+    flex-direction: column;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  .form {
+    height: 60%;
+    width: 450px;
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* Đặt các kiểu dáng phù hợp với màn hình điện thoại */
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .layout {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    height: 50%;
+    width: 400px;
+    padding: 0px 20px;
+  }
+}
+@keyframes pop-in {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes pop-out {
+  100% {
+    transform: scale(1);
+  }
+  0% {
+    transform: scale(0);
+  }
+}
+.header {
+  height: 20%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  font-weight: 800;
+  border-bottom: 1px solid rgb(232 232 232);
+  font-size: 36px;
+  animation: pop-in 1s ease-in;
+}
+.headerLogin {
+  height: 20%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 46px;
+  animation: pop-in 1s ease-in;
+}
+
+.resultTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 33.33333%;
+}
+.result {
+  width: 400px;
+  padding: 0px 10px;
+}
